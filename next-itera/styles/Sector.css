@@ -1,0 +1,75 @@
+.sector {
+    background-color: #172634;
+    box-shadow: outset 0px 0px 40px 40px #172634;
+    border-radius: 100% 0 0 0;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    z-index: -1;
+    filter: opacity(40%);
+  }
+  
+  .s1 {
+    display: flex;
+    border-radius: 100% 0 0 0;
+    width: 350px;
+    height: 350px;
+    background: #21364a;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .s2 {
+    display: flex;
+    background: #2d4b66;
+    border-radius: 100% 0 0 0;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .s3 {
+    display: flex;
+    background: #3a6285;
+    border-radius: 100% 0 0 0;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .s4 {
+    display: flex;
+    background: #4778a2;
+    border-radius: 100% 0 0 0;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .s5 {
+    display: flex;
+    background: #5086b6;
+    border-radius: 100% 0 0 0;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .sector {
+      right: 20px;
+      bottom: 20px;
+    }
+  
+  }

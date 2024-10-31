@@ -1,0 +1,40 @@
+.bitrix {
+    flex-direction: column;
+    gap:40px
+}
+
+.bitrix__list {
+  list-style: none;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 200px auto;
+  line-height: 120%;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.bitrix__list-item {
+    text-align: justify;
+}
+
+.bitrix__span {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.bitrix__img {
+  display: flex;
+  max-width: 890px;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 530px) {
+  .bitrix__list {
+      grid-template-columns:  auto;
+  }
+  .bitrix__img {
+    max-width: 500px;
+}
+
+
+}

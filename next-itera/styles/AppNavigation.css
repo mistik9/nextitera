@@ -1,0 +1,43 @@
+
+.nav__menu {
+    gap: 5px;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    margin: 0 0 20px 0;
+  }
+  
+  .nav__menu-item {
+    border-radius: 6px;
+    box-shadow: inset 0 0 20px 13px rgb(0 0 0 / 7%);
+    margin: 0;
+    padding: 20px 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .my-app__link {
+    font-size: 20px;
+    line-height: 120%;
+    cursor: pointer;
+    text-decoration: none;
+    color: #9090a0;
+    border-radius: 5px;
+  }
+  
+  .nav__link_active {
+    font-weight: 700;
+    text-decoration: underline;
+  }
+
+  @media screen and (max-width: 670px) {
+
+    .nav__menu {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+      padding: 20px;
+    }
+
+  }
