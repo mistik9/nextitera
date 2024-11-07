@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // images: {
-  //   domains: ['newitera.ru', 'localhost:3000'],
+    domains: ['newitera.ru', 'localhost:3000'],
   //   path: "newitera.ru/screen/"
   // },
   images: {
