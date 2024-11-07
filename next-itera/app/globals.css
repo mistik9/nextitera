@@ -3,7 +3,7 @@
 color: #fff;
 margin: 0;
 min-height: 100vh;
-overflow: auto;
+/* overflow: auto; */
 font-family:"Open Sans", Arial, Helvetica, sans-serif;
 max-width: 990px;
 height: 100%;
@@ -12,6 +12,9 @@ background-size: cover;
 margin: 0 auto;
 }
 
+.scroll-smooth{
+  scroll-behavior: smooth;
+}
 
 
 .header {

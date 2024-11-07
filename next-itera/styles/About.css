@@ -48,7 +48,7 @@
     margin: 25px;
     width: 250px;
     height: 250px;
-    background-image: url(../images/26.jpg);
+    background-image: url(../public/images/26.jpg);
     background-size: cover;
     background-position: left top;
     border-radius: 50%;
@@ -61,7 +61,6 @@
     width: 100%;
     min-height: 400px;
     box-sizing: border-box;
-    padding: 0;
     margin: 0 auto;
     position: relative;
   }

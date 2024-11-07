@@ -1,29 +1,36 @@
-import FaqItem from './[id]';
+'use client';
+
 import Link from 'next/link';
+import { app } from '@/utils/const';
+import React from 'react';
+import { usePathname } from 'next/navigation';
+import '../../../../styles/Faq.css';
 
 
-export default function Faq({ faq }) {
+export default function Faq({params}) {
+  const pathname = usePathname();
+  let match = pathname.match(/\/([^}]+)\//);
+  let substring = match ? match[1] : '';
+  const myApp = app.find((el) => el.id === substring);
 
-    console.log(faq)
-  const renderFaq = faq?.map((item) => (
-        <Link className="faq__link" href={`${item.id}`} key={item.id}>
-            {console.log(item)}
-            <div className="faq__block">
-                <div className="faq__icon"> </div>
-                <h4 className="faq__subtitle">{item.title}</h4>
-            </div>
-            <FaqItem item={item} />
-        </Link>
+  const renderFaq = myApp.faq?.map((item, ) => (
+    <Link className="faq__link" href={`/${params.slug}/faq/${item.id}`} key={item.id}>
+      <div className="faq__block">
+        <div className="faq__icon"> </div>
+        <h4 className="faq__subtitle">{item.title}</h4>
+      </div>
+      </Link>
   ));
 
   return (
-        <div className="faq">
-            {faq ? (renderFaq) : (
-                <div className="my-app__title-container" >
-                    <h4 className="my-app__subtitle">Здесь пусто. Пока что...</h4>
-                </div >
-            )}
-        </div >
-
+    <div className="faq">
+      {myApp ? (
+        renderFaq
+      ) : (
+        <div className="my-app__title-container">
+          <h4 className="my-app__subtitle">Здесь пусто. Пока что...</h4>
+        </div>
+      )}
+    </div>
   );
 }

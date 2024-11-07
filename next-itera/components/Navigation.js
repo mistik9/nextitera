@@ -1,24 +1,30 @@
-import React from 'react';
+'use client';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import '../styles/Navigation.css';
 
-function Navigation({ isNavOpen, openMenu, setIsNavOpen }) {
+function Navigation({}) {
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
+  function openMenu() {
+    setIsNavOpen(!isNavOpen);
+  }
   return (
     <nav className="nav">
       <div className={`nav__list ${!isNavOpen ? '' : 'nav__list_shown'}`}>
-        <Link className="nav__link" href="/#about">
+        <Link className="nav__link" href="/#about" onClick={()=>setIsNavOpen(false)}>
           О компании
         </Link>
-        <Link className="nav__link" href="/#my-apps">
+        <Link className="nav__link" href="/#my-apps" onClick={()=>setIsNavOpen(false)}>
           Наши приложения
         </Link>
-        <Link className="nav__link" href="/bitrix">
+        <Link className="nav__link" href="/bitrix"   onClick={()=>setIsNavOpen(false)}>
           Битрикс24
         </Link>
-        <Link className="nav__link" href="/news">
+        <Link className="nav__link" href="/news" onClick={()=>setIsNavOpen(false)}>
           Новости
         </Link>
-        <Link className="nav__link" href="/#feedback">
+        <Link className="nav__link" href="/#feedback" onClick={()=>setIsNavOpen(false)}>
           Контакты
         </Link>
       </div>

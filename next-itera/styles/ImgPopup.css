@@ -37,7 +37,7 @@
   .popup__close {
     border: none;
     padding: 0;
-    background-image: url(../images/plus.png);
+    background-image: url(../public/images/plus.png);
     background-size: cover;
     transform: rotate(45deg);
     width: 32px;

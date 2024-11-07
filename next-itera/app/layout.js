@@ -1,7 +1,8 @@
-
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
 import './globals.css';
+import ScrollToTop from '@/components/ScrollToTop';
+import Transition from '@/components/Transition';
 
 export const metadata = {
   title: 'ITera',
@@ -10,10 +11,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className='page'>
+    <html lang="ru" className="scroll-smooth">
+      <body className="page">
+        <ScrollToTop />
         <Header />
-        <main> {children} </main>
+        <Transition> {children} </Transition>
         <Footer />
       </body>
     </html>

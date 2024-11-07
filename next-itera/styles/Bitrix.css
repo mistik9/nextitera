@@ -21,20 +21,22 @@
   font-size: 1.1rem;
   font-weight: 600;
 }
-
-.bitrix__img {
+.bitrix__img-container {
   display: flex;
-  max-width: 890px;
+  max-width: 100%;
   margin-top: 50px;
 }
+.bitrix__img {
+  /* background: url(../images/980x247.png); */
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 680px) {
   .bitrix__list {
       grid-template-columns:  auto;
   }
-  .bitrix__img {
-    max-width: 500px;
-}
-
-
 }

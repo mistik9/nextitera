@@ -12,4 +12,4 @@ function ImgPopup({ selectedImg, onclose, isPopupOpen }) {
   );
 }
 
-export  {ImgPopup};
+export   {ImgPopup};

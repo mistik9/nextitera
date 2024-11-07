@@ -1,26 +1,28 @@
 'use client';
 import Link from 'next/link';
 import React, { useState } from 'react';
-import { updatesAutoload, updatesAvito, updatesDrom, updatesAvitojob } from '@/utils/const';
-import "../../styles/News.css";
+import { motion } from 'framer-motion';
+import { app } from '@/utils/const';
+import '../../styles/News.css';
 
 export default function News() {
-  const autoload = updatesAutoload.map((i) => ({ title: (i.title = 'Avito: автозагрузка'), period: i.list_name, list: i.list }));
-  const avito = updatesAvito.map((i) => ({ title: (i.title = 'Avito: чаты и товары'), period: i.list_name, list: i.list }));
-  const drom = updatesDrom.map((i) => ({ title: (i.title = 'ДРОМ: чаты, сделки, товары'), period: i.list_name, list: i.list }));
-  const avitojob = updatesAvitojob.map((i) => ({ title: (i.title = 'Avito: отклики и вакансии'), period: i.list_name, list: i.list }));
-  const resArr = avito.concat(autoload, drom, avitojob);
+  const updates = app.map((i) => i.updates.map((el) => ({ title: i.title, period: el.list_name, list: el.list }))); //из константы app составили массивы обновлений
 
-  const resArrConverted = resArr.sort((a, b) => {
+  const flattenedUpdates = updates.flat(); // объединили в один массив
+
+  //отсортировали массив по дате
+  const sortedUpdates = flattenedUpdates.sort((a, b) => {
     const aa = a.period.split('.').reverse().join();
     const bb = b.period.split('.').reverse().join();
     return aa < bb ? 1 : aa > bb ? -1 : 0;
   });
-  const [news, setNews] = useState(resArrConverted);
 
+  const [news, setNews] = useState(sortedUpdates);
+
+  // фильтрация новостей по приложению
   const newsCheck = (title) => {
-    if (title === '') return setNews(resArrConverted);
-    const newItems = resArrConverted.filter((item) => item.title === title);
+    if (title === '') return setNews(sortedUpdates);
+    const newItems = sortedUpdates.filter((item) => item.title === title);
     return setNews(newItems);
   };
 
@@ -66,12 +68,15 @@ export default function News() {
                 {i.title}
               </Link>
             )}
-            {i.list?.map((el) => (
-              <p className="news__text">{el.text}</p>
+            {i.list?.map((el, index) => (
+              <p className="news__text" key={index}>
+                {el.text}
+              </p>
             ))}
           </li>
         ))}
       </ul>
     </section>
+    // </motion.section>
   );
 }

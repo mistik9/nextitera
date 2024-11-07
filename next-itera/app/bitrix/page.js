@@ -1,5 +1,7 @@
-import bitrix from '../../images//980x247.png';
+'use client';
+// import bitrix from '../../images/980x247.png';
 import '../../styles/Bitrix.css';
+import Image from 'next/image';
 
 export default function Bitrix() {
   return (
@@ -44,9 +46,11 @@ export default function Bitrix() {
           Автоматизируйте всё, что мешает двигаться вперед — рутинные задачи, работу со сделками, согласование договоров, оплату счетов, отчетность.
         </li>
       </ul>
-      <a href="https://www.bitrix24.ru/?p=17063680" alt="Битрикс24">
-        <img className="bitrix__img" src={bitrix} alt="Битрикс24" />
-      </a>
+      <div className="bitrix__img-container">
+        <a href="https://www.bitrix24.ru/?p=17063680" alt="Битрикс24">
+          <Image className="bitrix__img" src='/images/980x247.png' alt="Битрикс24" />
+        </a>
+      </div>
     </div>
   );
 }

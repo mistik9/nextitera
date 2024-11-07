@@ -23,7 +23,7 @@
     align-items: center;
     background-color: #02283f;
     box-shadow: 0 4px 12px 0 #24242c85;
-    transition: transform 0.8s ease-in-out 1s;
+    transition: all 4s ease-in-out 1s;
     cursor: pointer;
     box-sizing: border-box;
     position: relative;
@@ -32,8 +32,8 @@
   
   .my-apps__item:hover {
     background: linear-gradient(201deg, #02283f, #24242c);
-  
-    color: #9090a0;
+    box-shadow: 0 4px 12px 0  #5086b6;
+    /* color: #9090a0; */
   }
   
   .my-apps__subtitle {
@@ -162,17 +162,17 @@
   }
   
   .my-app__icon {
-    background-image: url(../images/plus.png);
+    background-image: url(../public/images/plus.png);
     background-position: center;
     background-size: cover;
     height: 24px;
     width: 24px;
     margin-right: 20px;
-    transition: transform 4s ease-in-out 1s;
+    transition: all 4s ease-in-out 1s;
   }
   
   .my-app__icon_minus {
-    background-image: url(../images/minus.png);
+    background-image: url(../public/images/minus.png);
   }
   
   .my-app__navlink {
@@ -185,7 +185,7 @@
     background-position: 0% 100%;
     background-repeat: no-repeat;
     background-size: 0% 2px;
-    transition: background-size .3s;
+    transition: all .3s;
     padding-bottom: 5px;
   }
   
@@ -211,8 +211,8 @@
   }
   @media screen and (max-width: 775px) {
     .my-apps__item {
-      width: 320px;
-      height: 320px;
+      width: 310px;
+      height: 310px;
     }
   }
   
@@ -239,4 +239,10 @@
       width: 300px;
       height: 300px;
       }
+  }
+  @media screen and (max-width: 330px) {
+    .my-apps__item {
+      width: 290px;
+      height: 290px;
+    }
   }

@@ -38,7 +38,7 @@
     border-radius: 5px;
     color: #ffffff;
     cursor: pointer;
-    transition: transform 4s ease-in-out 1s;
+    transition: all 4s ease-in-out 1s;
   }
   
   .feedback__btn:hover {
@@ -57,6 +57,9 @@
     display: flex;
     gap: 25px;
     margin-top: 8px;
+    min-height: 40px;
+    align-items: center;
+
   }
   
   .section__icon {
@@ -65,20 +68,22 @@
     height: 35px;
     width: 35px;
     border-radius: 5px;
-    transition: transform 4s ease-in-out 1s;
+    transition: all 0.4s ease-out ;
   }
   
   .section__icon:hover {
-    background-color: #b9b9b9;
+    /* background-color: #b9b9b9; */
+    width: 40px;
+    height: 40px;
   }
   
   .section__icon_tg {
-    background-image: url(../images/telegram.svg);
+    background-image: url(../public/images/telegram.svg);
   
   }
   
   .section__icon_wa {
-    background-image: url(../images/whatsapp2.svg);
+    background-image: url(../public/images/whatsapp2.svg);
   }
   
   @media screen and (max-width: 850px) {

@@ -2,16 +2,8 @@
     display: grid;
     gap: 20px;
     padding: 50px;
-    opacity: 0;
-    animation: ani 2s forwards;
-  }
-  
-  @keyframes ani {
-      0% {opacity: 0;}
-      100% {opacity: 1;}
-    }
-  
-  .news__list {
+   }
+    .news__list {
     list-style: none;
     display: grid;
     margin: 0;
@@ -55,11 +47,11 @@
   
   .news__btn {
     background: none;
-    color: #5086b6;
+    color: #88b7e1;
     font-weight: 500;
     border: none;
     cursor: pointer;
-    transition: color 0.8s;
+    transition: all 0.8s;
   }
   
   .news__btn:hover {
