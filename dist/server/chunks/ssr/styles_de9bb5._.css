@@ -1,0 +1,179 @@
+/* [project]/styles/Navigation.css [app-ssr] (css) */
+.nav {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 1s;
+}
+
+.nav__list_shown {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #000000d9;
+  z-index: 2;
+}
+
+.nav__burger {
+  display: none;
+  gap: 5px;
+  height: 33px;
+  width: 33px;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.nav__burger_close {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 50px;
+}
+
+.nav__burger-line {
+  border-radius: 5px;
+  background-color: #9ac6e0;
+  height: 5px;
+  width: 32px;
+}
+
+.nav__burger-line_first {
+  transform: rotate(-45deg);
+  margin-top: 19px;
+  transition: all .4s ease-in-out;
+}
+
+.nav__burger-line_second {
+  transform: rotate(45deg);
+  margin-top: -10px;
+  transition: all .4s ease-in-out;
+}
+
+.nav__burger-line_third {
+  opacity: 0;
+  transform: rotate(45deg);
+  transition: all .4s ease-in-out;
+}
+
+.nav__link {
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #fff;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: all .3s;
+  padding-bottom: 5px;
+}
+
+.nav__link:hover {
+  background-size: 100% 2px;
+}
+
+@media screen and (width <= 810px) {
+  .nav__link {
+    font-size: 1rem;
+    margin-left: 25px;
+  }
+}
+
+@media screen and (width <= 730px) {
+  .nav__link {
+    font-size: .8rem;
+    margin-left: 25px;
+  }
+}
+
+@media screen and (width <= 700px) {
+  .nav__list {
+    display: none;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 20px;
+    padding-top: 100px;
+    animation: .6s ease-in-out Appearance;
+  }
+
+  .nav__list_shown {
+    display: flex;
+  }
+
+  @keyframes Appearance {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .nav__link {
+    font-size: 1rem;
+  }
+
+  .nav__burger {
+    display: grid;
+  }
+}
+
+
+/* [project]/styles/ScrollToTop.css [app-ssr] (css) */
+.arrowUp {
+  width: 2rem;
+  height: 2rem;
+}
+
+.scrollToTop-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 60px;
+  right: 50px;
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 48px;
+  background-color: #5086b6;
+  border: none;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.scrollToTop-btn:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -6px 0 0 -10px;
+  border: solid #fff;
+  border-width: 0 4px 4px 0;
+  border-radius: 2px;
+  padding: 8px;
+  transform: rotate(-135deg);
+}
+
+.scrollToTop-btn:hover {
+  background: #005c99;
+}
+
+
+/*# sourceMappingURL=styles_de9bb5._.css.map*/

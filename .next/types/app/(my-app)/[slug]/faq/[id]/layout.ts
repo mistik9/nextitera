@@ -1,4 +1,4 @@
-// File: C:\Users\misti\nextitera\next-itera\app\(my-app)\[slug]\faq\[id]\layout.js
+// File: C:\Users\misti\nextitera\app\(my-app)\[slug]\faq\[id]\layout.js
 import * as entry from '../../../../../../../app/(my-app)/[slug]/faq/[id]/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

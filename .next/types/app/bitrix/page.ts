@@ -1,4 +1,4 @@
-// File: C:\Users\misti\nextitera\next-itera\app\bitrix\page.js
+// File: C:\Users\misti\nextitera\app\bitrix\page.js
 import * as entry from '../../../../app/bitrix/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

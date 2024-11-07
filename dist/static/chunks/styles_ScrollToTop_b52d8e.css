@@ -1,0 +1,44 @@
+/* [project]/styles/ScrollToTop.css [app-client] (css) */
+.arrowUp {
+  width: 2rem;
+  height: 2rem;
+}
+
+.scrollToTop-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 60px;
+  right: 50px;
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 48px;
+  background-color: #5086b6;
+  border: none;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.scrollToTop-btn:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -6px 0 0 -10px;
+  border: solid #fff;
+  border-width: 0 4px 4px 0;
+  border-radius: 2px;
+  padding: 8px;
+  transform: rotate(-135deg);
+}
+
+.scrollToTop-btn:hover {
+  background: #005c99;
+}
+
+/*# sourceMappingURL=styles_ScrollToTop_b52d8e.css.map*/

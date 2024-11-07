@@ -48,7 +48,7 @@ export default function Bitrix() {
       </ul>
       <div className="bitrix__img-container">
         <a href="https://www.bitrix24.ru/?p=17063680" alt="Битрикс24">
-          <Image className="bitrix__img" src='/images/980x247.png' alt="Битрикс24" />
+          <Image className="bitrix__img" src='/images/980x247.png'width={900} height={200} alt="Битрикс24" />
         </a>
       </div>
     </div>
