@@ -1,20 +1,20 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // images: {
+  images: {
     domains: ['newitera.ru', 'localhost:3000'],
   //   path: "newitera.ru/screen/"
   // },
-  images: {
-    disableStaticImages: true,
-    formats: ["image/avif", "image/webp"],
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'newitera.ru',
-        port: '',
-        pathname: '*',
-      },
-    ],
+  // images: {
+  //   disableStaticImages: true,
+  //   formats: ["image/avif", "image/webp"],
+  //   remotePatterns: [
+  //     {
+  //       protocol: 'https',
+  //       hostname: 'newitera.ru',
+  //       port: '',
+  //       pathname: '*',
+  //     },
+  //   ],
     // localPatterns: [
     //   {
     //     pathname: '/images/',
