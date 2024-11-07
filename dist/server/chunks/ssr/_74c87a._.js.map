@@ -1,9 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 5, "column": 0}, "map": {"version":3,"sources":["/turbopack/[project]/app/not-found.js"],"sourcesContent":["\"use client\"\r\nimport React from 'react';\r\nimport { useRouter } from 'next/navigation';\r\nimport '../styles/PageNotFound.css';\r\n\r\nfunction PageNotFound() {\r\n    const router = useRouter();\r\n\r\n  return (\r\n    <div className=\"notfound\">\r\n      <h1 className=\"notfound__title\">404</h1>\r\n      <p className=\"notfound__subtitle\">Страница не найдена</p>\r\n      <button className=\"notfound__btn\" onClick={() => router.back()}>\r\n        Назад\r\n      </button>\r\n      <div className=\"notfound__img\"></div>\r\n    </div>\r\n  );\r\n}\r\n\r\nexport default PageNotFound;"],"names":[],"mappings":";;;;;;;AAAA;;;;;AAKA,SAAS;IACL,MAAM,SAAS,CAAA,GAAA,kIAAA,CAAA,YAAS,AAAD;IAEzB,qBACE,wPAAC;QAAI,WAAU;;0BACb,wPAAC;gBAAG,WAAU;0BAAkB;;;;;;0BAChC,wPAAC;gBAAE,WAAU;0BAAqB;;;;;;0BAClC,wPAAC;gBAAO,WAAU;gBAAgB,SAAS,IAAM,OAAO,IAAI;0BAAI;;;;;;0BAGhE,wPAAC;gBAAI,WAAU;;;;;;;;;;;;AAGrB;uCAEe"}},
-    {"offset": {"line": 62, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
-    {"offset": {"line": 70, "column": 0}, "map": {"version":3,"sources":["/turbopack/[project]/node_modules/next/navigation.js"],"sourcesContent":["module.exports = require('./dist/client/components/navigation')\n"],"names":[],"mappings":"AAAA,OAAO,OAAO"}},
-    {"offset": {"line": 71, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}
