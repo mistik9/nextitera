@@ -1,6 +1,8 @@
 import React from "react";
 import { Circle } from "./Circle";
-import "../styles/About.css"
+import Image from "next/image";
+import "../styles/About.css";
+import hostImageLoader from "./ImageLoader";
 
 function About ()  {
   return (

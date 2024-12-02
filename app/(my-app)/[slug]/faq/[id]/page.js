@@ -5,7 +5,7 @@ import { ImgPopup } from '@/components/ImgPopup';
 import { app  } from '@/utils/const';
 import Image from 'next/image';
 import "../../../../../styles/Faq.css";
-import myImageLoader from '@/components/ImageLoader';
+import hostImageLoader from '@/components/ImageLoader';
 
 export default function FaqItem({ params }) {
   const router = useRouter();
@@ -36,7 +36,7 @@ export default function FaqItem({ params }) {
               {i?.list?.map((i, index) => (
                 <li key={index} className="faq__list-item">
                   <p className="faq__text">{i.text}</p>
-                  <div className="faq__img-container">{i.link ? <Image loader={myImageLoader} className="faq__img" src={i.link} alt="скриншот" onClick={onClickImg} width={500} height={255}/> : null}</div>
+                  <div className="faq__img-container">{i.link ? <Image loader={hostImageLoader} className="faq__img" src={i.link} alt="скриншот" onClick={onClickImg} width={500} height={255}/> : null}</div>
                 </li>
               ))}
               {i?.text}

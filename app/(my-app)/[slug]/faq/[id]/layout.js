@@ -8,6 +8,17 @@ export async function generateMetadata({ params }) {
   return {
     title: `${app.title} "${faqItem.title}"`,
     description: `Вопросы и ответы по приложению ${app.title}`,
+    openGraph: {
+      title: `${app.title} "${faqItem.title}"`,
+      description: `Вопросы и ответы по приложению ${app.title}`,
+      images: [
+        {
+          url: `${app.img}`, 
+          width: 100,
+          height: 100,
+        },
+      ],
+    },
   };
 }
 export function generateStaticParams({ params }) {

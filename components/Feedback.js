@@ -1,6 +1,6 @@
 "use client"
 import React, {useEffect} from "react";
-// import bx from "../images/bitrix24_partner.png";
+import hostImageLoader from "./ImageLoader";
 import Image from "next/image";
 import "../styles/Feedback.css"
 
@@ -22,7 +22,7 @@ function Feedback() {
           <section className="feedback" id="feedback">
   
               <div className="feedback__contact">
-              <Image className="feedback__bx" src="/images/bitrix24_partner.png" alt="Битрикс24 партнер" width={150} height={60}/>
+              <Image loader={hostImageLoader} className="feedback__bx" src="https://newitera.ru/images/bitrix24_partner.png" alt="Битрикс24 партнер" width={150} height={60}/>
                   <p className="feedback__text">
                       Расскажите о проекте, задайте вопросы — мы будем рады помочь вам
                   </p>

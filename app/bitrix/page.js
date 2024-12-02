@@ -1,5 +1,5 @@
 'use client';
-// import bitrix from '../../images/980x247.png';
+import hostImageLoader from '@/components/ImageLoader';
 import '../../styles/Bitrix.css';
 import Image from 'next/image';
 
@@ -48,7 +48,7 @@ export default function Bitrix() {
       </ul>
       <div className="bitrix__img-container">
         <a href="https://www.bitrix24.ru/?p=17063680" alt="Битрикс24">
-          <Image className="bitrix__img" src='/images/980x247.png'width={900} height={200} alt="Битрикс24" />
+          <Image loader={hostImageLoader} className="bitrix__img" src='https://newitera.ru/images/980x247.png'width={900} height={200} alt="Битрикс24" />
         </a>
       </div>
     </div>

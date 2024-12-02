@@ -3,6 +3,7 @@ import AppNavigation from '@/components/AppNavigation';
 import '../../../styles/MyApp.css';
 import { app as myApp } from '@/utils/const';
 import Transition from '@/components/Transition';
+import Scroll from '@/components/Scroll';
 
 export async function generateMetadata({ params }) {
   const app = myApp.find((el) => el.id === params.slug);
@@ -23,6 +24,7 @@ export default function AvitoLayout({ children, params }) {
 
   return (
     <Transition>
+      <Scroll/>
        <div className="my-app-layout">
         <div className="my-app__title-container">
           <img className="my-app__img" src={app.img} alt="иконка" />

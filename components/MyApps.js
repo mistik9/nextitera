@@ -17,7 +17,7 @@ function MyApps() {
             <p className="section__text section__text_sm"> Подробнее &#8594;</p>
           </div>
         </Link>
-        <Link href="/avito" className="section__link">
+        <Link href="/avito" className="section__link" >
           <div className="my-apps__item">
             <Image className="my-apps__img" src="/images/app.svg" height={60} width={70} alt="иконка" />
             <h4 className="my-apps__subtitle">Avito: чаты и товары </h4>
