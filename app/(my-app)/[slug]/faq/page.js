@@ -24,7 +24,7 @@ export default function Faq({params}) {
 
   return (
     <div className="faq">
-      {myApp ? (
+      {myApp.faq.length > 0  ? (
         renderFaq
       ) : (
         <div className="my-app__title-container">

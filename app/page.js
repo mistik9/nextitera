@@ -5,6 +5,7 @@ import { Feedback } from '@/components/Feedback';
 import { MyApps } from '@/components/MyApps';
 import { motion } from 'framer-motion';
 import '../styles/Main.css';
+import Script from 'next/script';
 
 function Main({}) {
   return (
@@ -12,6 +13,7 @@ function Main({}) {
       <About />
       <MyApps />
       <Feedback />
+
     </main>
   );
 }

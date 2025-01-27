@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Sector from '@/components/Sector';
 import { usePathname } from 'next/navigation';
 import { app as myApp } from '@/utils/const';
+import Script from 'next/script';
 
 export default function Avito() {
   const path = usePathname().replace(/\//gm, '');
@@ -22,6 +23,16 @@ export default function Avito() {
         Главные преимущества приложения:
         {decsItem}
       </ul>
+      <div>
+        {app.id == 'amo-drom' && (
+          <div className='my-app__amo-block'>
+            <a  href="https://www.amocrm.ru/oauth/?client_id=445790ae-b04d-4df8-9803-d93430251b3b" target="_blank" rel="noopener">
+              <button className="my-app__btn">Установить виджет</button>
+            </a>
+            <h3>Подключите {app.title} к amoCRM</h3>
+          </div>
+        )}
+      </div>
       <h4 className="my-app__subtitle">
         Все обновления приложения вы можете посмотреть в разделе:
         <Link className="my-app__navlink" href="/news">

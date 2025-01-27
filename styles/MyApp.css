@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   padding: 50px;
-
 }
 .my-app {
   padding: 0 70px 70px 70px;
@@ -11,10 +10,7 @@
   line-height: 150%;
   display: grid;
   gap: 10px;
-
 }
-
-
 
 .my-app__title-container {
   display: grid;
@@ -22,6 +18,7 @@
   gap: 15px;
   align-items: center;
   margin-bottom: 30px;
+  position: relative;
 }
 
 .my-app__img {
@@ -40,6 +37,40 @@
 .my-app__text {
   margin: 0;
   line-height: 200%;
+}
+
+.my-app__amo-block {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.my-app__btn {
+  height: 45px;
+  align-items: center;
+  background:#519bc3;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(0, 75, 160);
+  border-radius: 6px;
+  box-shadow: inset 0 0 20px 13px #00000012;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.my-app__btn:hover {
+  transform: scale(1.2);
+}
+
+.my-app__market {
+  height: 50px;
+  border-radius: 10px;
+  position: absolute;
+  right:20px;
+  bottom: -10px;
+
 }
 
 .my-app__text_invisible {
@@ -131,5 +162,9 @@
   }
   .my-app-layout {
     padding: 20px;
+  }
+  .my-app__market {
+    position: relative;
+  
   }
 }

@@ -3,7 +3,7 @@ const nextConfig = {
   images: {
     domains: ['newitera.ru', 'localhost:3000'],
   },
-  output: 'export',
+   output: 'export',
   distDir: 'dist',
 };
 

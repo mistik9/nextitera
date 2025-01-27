@@ -6,7 +6,7 @@ function Header() {
     <header className="header">
       <Logo />
       <Navigation />
-      <ul class="lightrope">
+      {/* <ul className="lightrope">
         <li></li>
         <li></li>
         <li></li>
@@ -49,7 +49,7 @@ function Header() {
         <li></li>
         <li></li>
         <li></li>
-      </ul>
+      </ul> */}
     </header>
   );
 }
